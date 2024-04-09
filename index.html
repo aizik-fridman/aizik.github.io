@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>אוצרייא | דף הבית</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://ravinternet.org/wp-content/uploads/2018/11/%D7%A1%D7%A4%D7%A8%D7%99%D7%9D-488x360.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>בית</p>
+  </a>
+  <a href="#about " class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>אודות</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>צילומי מסך</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>צור קשר</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#     " class="w3-bar-item w3-button" style="width:25% !important">     </a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">.אוצרייא. לגלות את התורה מחדש</span></h1>
+    <p></p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7O7oA-gtLioUgMRaVr9SH5cZv3w0QShvqow&s" alt="gemara" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">            </h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>לאחר כמה שבועות של עבודה בשקט, אני שמח להציג בפניכם את הפרוייקט שלי - מאגר תורני חינמי בקוד פתוח.
+נתתי לו את השם "אוצריא" מתוך מחווה לספריא, משם נלקחו רוב הספרים, ומתוך רמיזה כי המאגר הזה פונה לציבור התורני.
+
+אני מדגיש כי התוכנה היא עדיין בפיתוח ולכן ייתכנו באגים, חוסר יציבות, ודברים דומים. ההפצה שלה בינתיים נועדה לצורך משוב על מנת לשפר את הממשק ולתקן את הבאגים, ולכן השימוש בה הוא על אחריות המשתמש בלבד, ואשמח לשמוע הערות ופידבקים. גם בקשות להוספת פיצ'רים מתקבלות בברכה.
+
+קרדיט: קיבלתי את ההשראה לפיתוח התוכנה מהשרשור הזה כאן בפורום, ואני מודה במיוחד ל @pcinfogmach יוצר תוסף תורת אמת לוורד, וכן ל @האדם-החושב שבזכותם נכנסתי לזה, וכן ל @לא-מתייאש שעוד מתכנן ליצור משהו שיאפיל על זה, מחכים לך!! וכן תודה לכל המעודדים ובפרט ל @דאנציג ו @מישהו12
+
+עכשיו לפירוט מה התוכנה כוללת.
+
+הספריה:
+כיום קיימים ספרים רבים מאד שאין עליהם זכויות יוצרים, וזמינים לציבור הרחב. ארגון ספריא מארה"ב יצר מאגר טקסטים גדול מאד, ממויין ומסודר ומקושר היטב, שניתן להשתמש בו בחופשיות, לפי תנאי הרישיון בכל טקסט. דא עקא, שהמדיניות של הכנסת הספרים אצלם חורגת מהמקובל במאגרים תורניים, וישנם ספרים רבים שאין רוח חכמים נוחה מהם במאגר.
+לצורך כך נעזרתי במתנדבים מהפורום, ויחד סיננו את המאגר (ראה כאן) והוצאנו ממנו כל ספר שאינו מתאים למאגר.
+[עם זאת, נבקש ממי שנתקל בספר שיתכן ואינו מתאים למאגר, לדווח על כך כדי שנוכל לברר זאת. ואנו תקווה שלא תצא תקלה מתחת ידינו.]
+מאגר הספרים הזה כולל כ-5900 ספרים, ויש בו את רוב ספרי היסוד, תנ"ך ומפרשיו, משנה ומפרשיה, ש"ס ומפרשים, טושו"ע ומפרשים, וכן ספרי מחשבה, מוסר ואפילו קבלה.
+
+מאגר היברידי
+בנוסף למאגר של קבצי הטקסט, באתר היברובוקס ניתן למצוא כמעט כל ספר, בדפוס צילום בקובץ PDF. התוכנה יכולה להציג גם קבצי PDF, וכל מה שצריך לעשות הוא להוריד את הספר המבוקש מהאתר https://hebrewbooks.org/ ולהכניס אותו לתוך התיקייה של הספריה, והוא יוצג יחד עם שאר הספרים.
+בנוסף, התוכנה כוללת גם תמיכה מינימלית בקבצי וורד, ויכולה להציג ספרים בפורמט .docx אך ללא שום עיצוב וללא כותרות.
+
+הממשק:
+    </p>
+    
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> הורד את אוצרייא
+    </button>
+    
+   
+
+      
+    </div>
+    
+   
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">אז ככה זה נראה</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://hamusicay.com/assets/uploads/e93a3272-5634-4e2c-94ec-4dabf7b0f1da-image.png" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="https://hamusicay.com/assets/uploads/e93a3272-5634-4e2c-94ec-4dabf7b0f1da-image.png" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">צרו קשר</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> ירושלים, ישראל</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> טלפון: 05222222</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> אימייל: sivan22@a.com</p>
+    </div><br>
+    <p>הארות והערות בקשר לתוכנה יתקבלו בברכה!</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="שם" required name="שם"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="אימייל" required name="אימייל"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="נושא" required name="נושא"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="הודעה" required name="הודעה"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> שלח
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
